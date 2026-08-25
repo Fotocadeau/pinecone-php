@@ -19,7 +19,7 @@ install and leverage this API to help them integrate [pinecone.io](https://pinec
 
 ## Installation
 
-`composer require probots-io/pinecone-php`
+`composer require fotocadeau/pinecone-php`
 
 ## Features
 
