@@ -62,7 +62,7 @@ function getClient(bool $mocked = false, string $fixtureSuffix = ''): Client
         '*' => function (PendingRequest $request) use ($fixtureSuffix) {
             $reflection = new ReflectionClass($request->getRequest());
 
-            $name = strtolower(str_replace(['Probots\\Pinecone\\Requests\\', '\\'], ['', '.'], $reflection->getName()));
+            $name = strtolower(str_replace(['Probots\\Pinecone\\Requests\\', '\\'], ['', '_'], $reflection->getName()));
 
             return MockResponse::fixture($name . $fixtureSuffix);
         },
