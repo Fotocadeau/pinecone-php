@@ -2,7 +2,7 @@
 
 it('can create an index (pod)', function () {
 
-    $client = getClient(true, '.pod');
+    $client = getClient(true, '_pod');
     $index = getIndexName('-pod');
 
     $response = $client->control()->index($index)->createPod(
@@ -15,7 +15,7 @@ it('can create an index (pod)', function () {
 
 it('can create an index (serverless)', function () {
 
-    $client = getClient(true, '.serverless');
+    $client = getClient(true, '_serverless');
     $index = getIndexName('-serverless');
 
     $response = $client->control()->index($index)->createServerless(

@@ -2,7 +2,7 @@
 
 it('can delete an index (pod)', function () {
 
-    $client = getClient(true, '.pod');
+    $client = getClient(true, '_pod');
     $index = getIndexName('-pod');
 
     $response = $client->control()->index($index)->delete();
@@ -13,7 +13,7 @@ it('can delete an index (pod)', function () {
 
 it('can delete an index (serverless)', function () {
 
-    $client = getClient(true, '.serverless');
+    $client = getClient(true, '_serverless');
     $index = getIndexName('-serverless');
 
     $response = $client->control()->index($index)->delete();
